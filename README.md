@@ -2,7 +2,27 @@
 
 ## Overview
 
-This project demonstrates hands-on experience managing Organizational Units (OUs), security groups, shared folders, and Group Policy in Active Directory.
+This project demonstrates hands-on experience managing Organizational Units (OUs), security groups, shared folders, and Group Policy using administrative tools in a simulated enterprise environment.
+
+---
+
+## Objectives
+
+* Create and manage Organizational Units
+* Configure security groups and memberships
+* Assign NTFS permissions to shared folders
+* Map network drives
+* Configure and apply Group Policy Objects (GPOs)
+* Verify configurations using PowerShell
+
+---
+
+## Technologies Used
+
+* Windows Server
+* Active Directory
+* Group Policy Management
+* PowerShell
 
 ---
 
@@ -10,39 +30,70 @@ This project demonstrates hands-on experience managing Organizational Units (OUs
 
 ### Organizational Unit Creation
 
-![OU](ou-creation.png)
+* Created a dedicated OU for department organization
 
-### Group Creation
+### Group Management
 
-![Group](Group-creation.png)
+* Created security groups and added users
+* Verified group membership assignments
 
-### Group Members
+### File Sharing and Permissions
 
-![Members](group-members.png)
-
-### User Membership Verification
-
-![User](UMarketing members.png)
-
-### Shared Folder Creation
-
-![Folder](File-created.png)
+* Configured shared folder access
+* Assigned NTFS permissions to security groups
 
 ### Network Drive Mapping
 
-![Drive](Map-network.png)
-
-### Folder Permissions
-
-![Permissions](Properties.png)
+* Connected shared folder to client system
 
 ### Group Policy Configuration
 
-![GPO](Group Policy.png)
+* Created and linked a GPO
+* Configured restricted group policies
+
+### Verification
+
+* Verified group membership and policy application using PowerShell
+
+---
+
+## Screenshots
+
+### Organizational Unit Creation
+
+<img src="ou-creation.png" width="700">
+
+### Group Creation
+
+<img src="Group-creation.png" width="700">
+
+### Group Members
+
+<img src="group-members.png" width="700">
+
+### User Membership Verification
+
+<img src="UMarketing members.png" width="700">
+
+### Shared Folder Creation
+
+<img src="File-created.png" width="700">
+
+### Network Drive Mapping
+
+<img src="Map-network.png" width="700">
+
+### Folder Permissions
+
+<img src="Properties.png" width="700">
+
+### Group Policy Configuration
+
+<img src="Group Policy.png" width="700">
 
 ### PowerShell Verification
 
-![PowerShell](Powershell.png)
+<img src="Powershell.png" width="700">
 
 ---
 
@@ -50,7 +101,7 @@ This project demonstrates hands-on experience managing Organizational Units (OUs
 
 * Active Directory Administration
 * Group Policy Management
-* Access Control
+* Access Control and Permissions
 * Network Drive Mapping
 * PowerShell
 
@@ -58,4 +109,4 @@ This project demonstrates hands-on experience managing Organizational Units (OUs
 
 ## Summary
 
-This lab demonstrates practical experience configuring Active Directory groups, permissions, and policies in a simulated enterprise environment.
+This lab demonstrates practical experience managing Active Directory groups, permissions, and policies in a Windows domain environment.
