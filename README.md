@@ -1,112 +1,45 @@
-# Active Directory Group and Policy Management Lab
+# Active Directory Groups, Permissions, and Group Policy
 
-## Overview
+I wanted to see how a department gets access to a shared drive in a Windows domain. I created an organizational unit and security groups, set permissions on a shared folder, mapped the drive from a client, and checked the Group Policy configuration.
 
-This project demonstrates hands-on experience managing Organizational Units (OUs), security groups, shared folders, and Group Policy using administrative tools in a simulated enterprise environment.
+## What I set up
 
----
+- I organized department accounts in an OU and verified security group memberships.
+- I assigned NTFS permissions to security groups and mapped the shared drive from the client.
+- I linked a GPO, configured Restricted Groups, and used PowerShell during verification.
 
-## Objectives
+## 1. Organizing users and groups
 
-* Create and manage Organizational Units
-* Configure security groups and memberships
-* Assign NTFS permissions to shared folders
-* Map network drives
-* Configure and apply Group Policy Objects (GPOs)
-* Verify configurations using PowerShell
+I created the OU first, then set up the security groups and checked which users were members.
 
----
+![Organizational unit creation](ou-creation.png)
 
-## Technologies Used
+![Security group creation](Group-creation.png)
 
-* Windows Server
-* Active Directory
-* Group Policy Management
-* PowerShell
+![Security group members](group-members.png)
 
----
+![Marketing group membership verification](UMarketing%20members.png)
 
-## Key Tasks Performed
+## 2. Setting up file access
 
-### Organizational Unit Creation
+I created the shared folder, reviewed its permissions, and mapped the drive from a client. I used security groups to manage access so the folder permissions could stay tied to groups as people joined or left.
 
-* Created a dedicated OU for department organization
+![Shared folder creation](File-created.png)
 
-### Group Management
+![Folder permission properties](Properties.png)
 
-* Created security groups and added users
-* Verified group membership assignments
+![Network drive mapping](Map-network.png)
 
-### File Sharing and Permissions
+## 3. Applying Group Policy and checking the results
 
-* Configured shared folder access
-* Assigned NTFS permissions to security groups
+I created and linked a GPO and configured Restricted Groups. I then used PowerShell to check the configuration and membership.
 
-### Network Drive Mapping
+![Group Policy configuration](Group%20Policy.png)
 
-* Connected shared folder to client system
+![PowerShell verification](Powershell.png)
 
-### Group Policy Configuration
+## What I learned
 
-* Created and linked a GPO
-* Configured restricted group policies
+This made it easier for me to see where I'd start if someone said they couldn't open a shared drive. I'd check their group membership, the folder permissions, and the policy before changing anything.
 
-### Verification
-
-* Verified group membership and policy application using PowerShell
-
----
-
-## Screenshots
-
-### Organizational Unit Creation
-
-<img src="ou-creation.png" width="700">
-
-### Group Creation
-
-<img src="Group-creation.png" width="700">
-
-### Group Members
-
-<img src="group-members.png" width="700">
-
-### User Membership Verification
-
-<img src="UMarketing members.png" width="700">
-
-### Shared Folder Creation
-
-<img src="File-created.png" width="700">
-
-### Network Drive Mapping
-
-<img src="Map-network.png" width="700">
-
-### Folder Permissions
-
-<img src="Properties.png" width="700">
-
-### Group Policy Configuration
-
-<img src="Group Policy.png" width="700">
-
-### PowerShell Verification
-
-<img src="Powershell.png" width="700">
-
----
-
-## Technical Skills Demonstrated
-
-* Active Directory Administration
-* Group Policy Management
-* Access Control and Permissions
-* Network Drive Mapping
-* PowerShell
-
----
-
-## Summary
-
-This lab demonstrates practical experience managing Active Directory groups, permissions, and policies in a Windows domain environment.
+**Tools:** Windows Server · Active Directory · Group Policy Management · PowerShell · NTFS
